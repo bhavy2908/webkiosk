@@ -1,0 +1,157 @@
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    z-index: 0;
+    font-weight: bolder;
+}
+
+.hbtn i {
+    padding-right: 8px;
+}
+
+.hb-fill-middle-bg::before {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: auto auto 0px 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+}
+
+.hb-fill-middle-bg:hover::before {
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+}
+
+.hb-fill-middle-bg:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+}
+
+.hb-fill-middle-bg::after {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+}
+
+.hb-fill-middle-bg:hover::after {
+    height: 50%;
+}
+
+.hpad5 {
+    padding: 24px 36px !important;
+}
+
+.hbor1 {
+    border-width: 1px;
+}
+
+.hbor1::before {
+    border-width: 1px !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container video {
+    position: relative;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: auto;
+    height: auto;
+}
+
+.container .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.container .center h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.container .center input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid #908686;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #262626;
+}
+
+.container .center a#login {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: #02475E;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0 10px;
+}
+
+.container .center a#login:hover {
+    background: #03a9f4;
+}
+
+.container .center a {
+    color: #262626;
+}
+
+.container .center a:hover {
+    color: #f44336;
+}
